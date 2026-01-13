@@ -1,0 +1,8 @@
+{
+  "name": "@giantcroissant-lunar/time-dete",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@giantcroissant-lunar/lunar-snake-hub": "file:../../../lunar-snake-hub"
+  }
+}

@@ -1,0 +1,17 @@
+<Project>
+  <PropertyGroup>
+    <!-- Root of the plate-shared repo, relative to this Directory.Build.props location -->
+    <TimeDetePlateSharedRoot>$(MSBuildThisFileDirectory)..\..\plate-shared\</TimeDetePlateSharedRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Meziantou.Analyzer" Version="1.0.734"
+                      PrivateAssets="all"
+                      IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+
+    <!-- Namespace scope analyzer from plate-shared -->
+    <ProjectReference Include="$(TimeDetePlateSharedRoot)dotnet\source-generators\General.NamespaceUsingScope.Set\General.NamespaceUsingScope\General.NamespaceUsingScope.csproj"
+                      OutputItemType="Analyzer"
+                      ReferenceOutputAssembly="false" />
+  </ItemGroup>
+</Project>

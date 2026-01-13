@@ -1,0 +1,66 @@
+version: "3"
+
+vars:
+  HUB_PACKAGE_DIR: node_modules/@giantcroissant-lunar/lunar-snake-hub
+
+tasks:
+  default:
+    desc: Show available tasks
+    cmds:
+      - task --list
+
+  build:
+    desc: Build the .NET solution
+    cmds:
+      - dotnet build dotnet/Plate.TimeDete.sln
+
+  test:
+    desc: Run unit tests
+    cmds:
+      - dotnet test dotnet/Plate.TimeDete.sln
+
+  pack:
+    desc: Pack NuGet packages via Nuke + UnifyBuild
+    env:
+      UseLocalUnifyBuild: "true"
+    cmds:
+      - pwsh -File build/nuke/build.ps1 --target PackProjects
+
+  # ========================================================================
+  # Hub sync (lunar-snake-hub)
+  # ========================================================================
+
+  hub:install-hooks:
+    desc: Install/refresh hub-managed git hooks
+    cmds:
+      - cmd: node {{.HUB_PACKAGE_DIR}}/bin/hub-install-hooks.js
+
+  hub:uninstall-hooks:
+    desc: Uninstall hub-managed git hooks
+    cmds:
+      - cmd: node {{.HUB_PACKAGE_DIR}}/bin/hub-uninstall-hooks.js
+
+  hub:symlink-agent:
+    desc: Create .agent link to hub agent rules (for IDE agents)
+    cmds:
+      - cmd: |
+          if not exist .agent (
+            mklink /J .agent node_modules\@giantcroissant-lunar\lunar-snake-hub\.agent
+          ) else (
+            echo .agent already exists, skipping
+          )
+        platforms: [windows]
+      - cmd: |
+          if [ -L .agent ] || [ -e .agent ]; then
+            echo ".agent already exists, skipping"
+          else
+            ln -s {{.HUB_PACKAGE_DIR}}/.agent .agent
+          fi
+        platforms: [linux, darwin]
+
+  hub:sync:
+    desc: Install hooks + link .agent (requires npm install)
+    cmds:
+      - task: hub:install-hooks
+      - task: hub:symlink-agent
+      - echo "Hub sync complete"

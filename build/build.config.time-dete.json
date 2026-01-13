@@ -1,0 +1,15 @@
+{
+  "$schema": "./build.config.schema.json",
+  "solution": "dotnet/Plate.TimeDete.sln",
+  "versionEnv": "Version",
+  "artifactsVersion": "time-dete",
+
+  "projectGroups": {
+    "nuget": {
+      "sourceDir": "dotnet/src",
+      "action": "pack",
+      "include": [],
+      "exclude": []
+    }
+  }
+}

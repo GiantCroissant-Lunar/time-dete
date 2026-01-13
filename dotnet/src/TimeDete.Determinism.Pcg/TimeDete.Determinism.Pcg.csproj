@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TimeDete.Determinism.Abstractions\TimeDete.Determinism.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\..\pcg-rng-port\dotnet\src\Pcg\Pcg.csproj"
+                      AdditionalProperties="TreatWarningsAsErrors=false"
+                      GlobalPropertiesToRemove="GenerateDocumentationFile" />
+  </ItemGroup>
+
+</Project>
