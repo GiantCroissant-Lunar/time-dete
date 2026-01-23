@@ -38,6 +38,11 @@ public readonly record struct CanonicalTick : IComparable<CanonicalTick>
     public static readonly CanonicalTick Genesis = new(0);
 
     /// <summary>
+    /// The maximum possible tick value. Use for "latest" queries.
+    /// </summary>
+    public static readonly CanonicalTick MaxValue = new(long.MaxValue);
+
+    /// <summary>
     /// Creates a CanonicalTick from a long value.
     /// </summary>
     /// <param name="value">The tick value. Must be non-negative.</param>
