@@ -1,0 +1,25 @@
+{
+  "$schema": "./build.config.schema.json",
+  "version": "0.1.0",
+  "versionEnv": "Version",
+  "artifactsVersion": "time-dete",
+
+  "projectGroups": {
+    "packages": {
+      "sourceDir": "dotnet/src",
+      "action": "pack",
+      "include": [
+        "TimeDete.Time",
+        "TimeDete.Time.Primitives",
+        "TimeDete.Time.Runtime",
+        "TimeDete.Determinism.Abstractions",
+        "TimeDete.Determinism.Pcg",
+        "TimeDete.Traceability.HashChain",
+        "TimeDete.Traceability.Hashing"
+      ]
+    }
+  },
+
+  "packIncludeSymbols": false,
+  "syncLocalNugetFeed": false
+}

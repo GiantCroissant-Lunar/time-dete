@@ -24,7 +24,12 @@ public sealed class PcgRngStreamProvider : IRngStreamProvider
 
     public ISeededRng GetStream(string name)
     {
+#if NETSTANDARD2_1
+        if (string.IsNullOrWhiteSpace(name))
+            throw new ArgumentException("Value cannot be null or whitespace.", nameof(name));
+#else
         ArgumentException.ThrowIfNullOrWhiteSpace(name);
+#endif
 
         return _streams.GetOrAdd(name, CreateStream);
     }

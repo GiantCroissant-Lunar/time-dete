@@ -54,7 +54,15 @@ public sealed class PcgSeededRng : ISeededRng
         return (_rng.Next() >> 8) * scale;
     }
 
-    public double NextDouble() => _rng.NextDouble();
+    public double NextDouble()
+    {
+        // NOTE: Cannot use _rng.NextDouble() extension method directly because
+        // Pcg32 is a struct and the extension method takes `this IPcgRng<uint>`,
+        // which causes boxing. The boxed copy gets mutated, not _rng.
+        // Instead, call _rng.Next() directly to advance state properly.
+        const double scale = 1.0 / (uint.MaxValue + 1.0);
+        return _rng.Next() * scale;
+    }
 
     public bool NextBool() => (_rng.Next() & 1) == 1;
 

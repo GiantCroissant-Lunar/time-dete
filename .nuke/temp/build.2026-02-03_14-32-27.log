@@ -1,0 +1,158 @@
+V |                      | ArgumentsFromParametersFile.OnBuildCreated (150)
+V |                      | HandleReSharperSurrogateArguments.OnBuildCreated (150)
+V |                      | InjectParameterValues.OnBuildCreated (100)
+V |                      | HandleShellCompletion.OnBuildCreated (75)
+V |                      | GenerateBuildServerConfigurations.OnBuildCreated (50)
+V |                      | InvokeBuildServerConfigurationGeneration.OnBuildCreated (45)
+V |                      | UpdateNotification.OnBuildCreated (10)
+V |                      | UnsetVisualStudioEnvironmentVariables.OnBuildCreated (0)
+V |                      | HandleVisualStudioDebugging.OnBuildCreated (0)
+V |                      | EventInvoker.OnBuildCreated (-3.4028235E+38)
+V |                      | HandlePlanRequests.OnBuildInitialized (10)
+V |                      | HandleHelpRequests.OnBuildInitialized (5)
+V |                      | Telemetry.OnBuildInitialized (0)
+V |                      | Sending BuildStarted telemetry event ...
+V |                      |   build_components         = 
+V |                      |   build_type               = Global Tool
+V |                      |   compile_time             = <null>
+V |                      |   config_generators        = 
+V |                      |   host                     = VSCode
+V |                      |   num_custom_components    = 6
+V |                      |   num_custom_extensions    = 0
+V |                      |   num_partitioned_targets  = 0
+V |                      |   num_secrets              = 0
+V |                      |   num_targets              = 11
+V |                      |   os_architecture          = X64
+V |                      |   os_platform              = Windows
+V |                      |   repo_branch              = main
+V |                      |   repo_commit              = 19a8f2
+V |                      |   repo_provider            = GitHub
+V |                      |   repo_url                 = 1fb99b
+V |                      |   target_framework         = .NETCoreApp,Version=v8.0
+V |                      |   version_dotnet_sdk       = 10.0.101
+V |                      |   version_nuke_common      = 8.0.0
+V |                      |   version_nuke_global_tool = <null>
+V |                      | InjectNonParameterValues.OnBuildInitialized (-100)
+V |                      | EventInvoker.OnBuildInitialized (-3.4028235E+38)
+V | Compile              | EventInvoker.OnTargetRunning (-3.4028235E+38)
+I | Compile              | Loading build configuration
+V | Compile              | Telemetry.OnTargetSucceeded (0)
+V | Compile              | Sending TargetSucceeded telemetry event ...
+V | Compile              |   build_components         = 
+V | Compile              |   build_type               = Global Tool
+V | Compile              |   compile_time             = <null>
+V | Compile              |   config_generators        = 
+V | Compile              |   host                     = VSCode
+V | Compile              |   num_custom_components    = 6
+V | Compile              |   num_custom_extensions    = 0
+V | Compile              |   num_partitioned_targets  = 0
+V | Compile              |   num_secrets              = 0
+V | Compile              |   num_targets              = 11
+V | Compile              |   os_architecture          = X64
+V | Compile              |   os_platform              = Windows
+V | Compile              |   repo_branch              = main
+V | Compile              |   repo_commit              = 19a8f2
+V | Compile              |   repo_provider            = GitHub
+V | Compile              |   repo_url                 = 1fb99b
+V | Compile              |   target_current_partition = 1
+V | Compile              |   target_duration          = 0
+V | Compile              |   target_framework         = .NETCoreApp,Version=v8.0
+V | Compile              |   target_name              = Compile
+V | Compile              |   target_total_partitions  = 1
+V | Compile              |   version_dotnet_sdk       = 10.0.101
+V | Compile              |   version_nuke_common      = 8.0.0
+V | Compile              |   version_nuke_global_tool = <null>
+V | Compile              | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+V | Pack                 | EventInvoker.OnTargetRunning (-3.4028235E+38)
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | > "C:\Program Files\dotnet\dotnet.exe" pack C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Determinism.Abstractions\TimeDete.Determinism.Abstractions.csproj --configuration Release --no-restore --output C:\lunar-horse\plate-projects\time-dete\build\_artifacts\time-dete\nuget /property:Version=0.1.0
+V | Pack                 | @ C:\lunar-horse\plate-projects\time-dete
+D | Pack                 |   General.NamespaceUsingScope -> C:\lunar-horse\plate-projects\plate-shared\dotnet\source-generators\General.NamespaceUsingScope.Set\General.NamespaceUsingScope\bin\Release\netstandard2.0\Plate.SCG.General.NamespaceUsingScope.dll
+D | Pack                 |   TimeDete.Determinism.Abstractions -> C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Determinism.Abstractions\bin\Release\netstandard2.1\TimeDete.Determinism.Abstractions.dll
+D | Pack                 |   套件 TimeDete.Determinism.Abstractions.0.1.0 遺漏讀我檔案。請移至 https://aka.ms/nuget/authoring-best-practices/readme 以了解套件讀我檔案很重要的原因。
+D | Pack                 |   已成功建立封裝 'C:\lunar-horse\plate-projects\time-dete\build\_artifacts\time-dete\nuget\TimeDete.Determinism.Abstractions.0.1.0.nupkg'。
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | > "C:\Program Files\dotnet\dotnet.exe" pack C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Determinism.Pcg\TimeDete.Determinism.Pcg.csproj --configuration Release --no-restore --output C:\lunar-horse\plate-projects\time-dete\build\_artifacts\time-dete\nuget /property:Version=0.1.0
+V | Pack                 | @ C:\lunar-horse\plate-projects\time-dete
+D | Pack                 |   General.NamespaceUsingScope -> C:\lunar-horse\plate-projects\plate-shared\dotnet\source-generators\General.NamespaceUsingScope.Set\General.NamespaceUsingScope\bin\Release\netstandard2.0\Plate.SCG.General.NamespaceUsingScope.dll
+D | Pack                 |   TimeDete.Determinism.Abstractions -> C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Determinism.Abstractions\bin\Release\netstandard2.1\TimeDete.Determinism.Abstractions.dll
+D | Pack                 |   Pcg -> C:\lunar-horse\plate-projects\pcg-rng-port\dotnet\src\Pcg\bin\Release\net8.0\Pcg.dll
+D | Pack                 |   TimeDete.Determinism.Pcg -> C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Determinism.Pcg\bin\Release\net8.0\TimeDete.Determinism.Pcg.dll
+D | Pack                 |   套件 TimeDete.Determinism.Pcg.0.1.0 遺漏讀我檔案。請移至 https://aka.ms/nuget/authoring-best-practices/readme 以了解套件讀我檔案很重要的原因。
+D | Pack                 |   已成功建立封裝 'C:\lunar-horse\plate-projects\time-dete\build\_artifacts\time-dete\nuget\TimeDete.Determinism.Pcg.0.1.0.nupkg'。
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | > "C:\Program Files\dotnet\dotnet.exe" pack C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Time\TimeDete.Time.csproj --configuration Release --no-restore --output C:\lunar-horse\plate-projects\time-dete\build\_artifacts\time-dete\nuget /property:Version=0.1.0
+V | Pack                 | @ C:\lunar-horse\plate-projects\time-dete
+D | Pack                 |   General.NamespaceUsingScope -> C:\lunar-horse\plate-projects\plate-shared\dotnet\source-generators\General.NamespaceUsingScope.Set\General.NamespaceUsingScope\bin\Release\netstandard2.0\Plate.SCG.General.NamespaceUsingScope.dll
+D | Pack                 |   TimeDete.Time.Primitives -> C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Time.Primitives\bin\Release\netstandard2.1\TimeDete.Time.Primitives.dll
+D | Pack                 |   TimeDete.Time -> C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Time\bin\Release\netstandard2.1\TimeDete.Time.dll
+D | Pack                 |   套件 TimeDete.Time.0.1.0 遺漏讀我檔案。請移至 https://aka.ms/nuget/authoring-best-practices/readme 以了解套件讀我檔案很重要的原因。
+D | Pack                 |   已成功建立封裝 'C:\lunar-horse\plate-projects\time-dete\build\_artifacts\time-dete\nuget\TimeDete.Time.0.1.0.nupkg'。
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | > "C:\Program Files\dotnet\dotnet.exe" pack C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Time.Primitives\TimeDete.Time.Primitives.csproj --configuration Release --no-restore --output C:\lunar-horse\plate-projects\time-dete\build\_artifacts\time-dete\nuget /property:Version=0.1.0
+V | Pack                 | @ C:\lunar-horse\plate-projects\time-dete
+D | Pack                 |   General.NamespaceUsingScope -> C:\lunar-horse\plate-projects\plate-shared\dotnet\source-generators\General.NamespaceUsingScope.Set\General.NamespaceUsingScope\bin\Release\netstandard2.0\Plate.SCG.General.NamespaceUsingScope.dll
+D | Pack                 |   TimeDete.Time.Primitives -> C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Time.Primitives\bin\Release\netstandard2.1\TimeDete.Time.Primitives.dll
+D | Pack                 |   套件 TimeDete.Time.Primitives.0.1.0 遺漏讀我檔案。請移至 https://aka.ms/nuget/authoring-best-practices/readme 以了解套件讀我檔案很重要的原因。
+D | Pack                 |   已成功建立封裝 'C:\lunar-horse\plate-projects\time-dete\build\_artifacts\time-dete\nuget\TimeDete.Time.Primitives.0.1.0.nupkg'。
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | > "C:\Program Files\dotnet\dotnet.exe" pack C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Time.Runtime\TimeDete.Time.Runtime.csproj --configuration Release --no-restore --output C:\lunar-horse\plate-projects\time-dete\build\_artifacts\time-dete\nuget /property:Version=0.1.0
+V | Pack                 | @ C:\lunar-horse\plate-projects\time-dete
+D | Pack                 |   General.NamespaceUsingScope -> C:\lunar-horse\plate-projects\plate-shared\dotnet\source-generators\General.NamespaceUsingScope.Set\General.NamespaceUsingScope\bin\Release\netstandard2.0\Plate.SCG.General.NamespaceUsingScope.dll
+D | Pack                 |   TimeDete.Time.Primitives -> C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Time.Primitives\bin\Release\netstandard2.1\TimeDete.Time.Primitives.dll
+D | Pack                 |   TimeDete.Time -> C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Time\bin\Release\netstandard2.1\TimeDete.Time.dll
+D | Pack                 |   TimeDete.Time.Runtime -> C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Time.Runtime\bin\Release\netstandard2.1\TimeDete.Time.Runtime.dll
+D | Pack                 |   套件 TimeDete.Time.Runtime.0.1.0 遺漏讀我檔案。請移至 https://aka.ms/nuget/authoring-best-practices/readme 以了解套件讀我檔案很重要的原因。
+D | Pack                 |   已成功建立封裝 'C:\lunar-horse\plate-projects\time-dete\build\_artifacts\time-dete\nuget\TimeDete.Time.Runtime.0.1.0.nupkg'。
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | > "C:\Program Files\dotnet\dotnet.exe" pack C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Traceability.HashChain\TimeDete.Traceability.HashChain.csproj --configuration Release --no-restore --output C:\lunar-horse\plate-projects\time-dete\build\_artifacts\time-dete\nuget /property:Version=0.1.0
+V | Pack                 | @ C:\lunar-horse\plate-projects\time-dete
+D | Pack                 |   General.NamespaceUsingScope -> C:\lunar-horse\plate-projects\plate-shared\dotnet\source-generators\General.NamespaceUsingScope.Set\General.NamespaceUsingScope\bin\Release\netstandard2.0\Plate.SCG.General.NamespaceUsingScope.dll
+D | Pack                 |   TimeDete.Traceability.Hashing -> C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Traceability.Hashing\bin\Release\netstandard2.1\TimeDete.Traceability.Hashing.dll
+D | Pack                 |   TimeDete.Traceability.HashChain -> C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Traceability.HashChain\bin\Release\netstandard2.1\TimeDete.Traceability.HashChain.dll
+D | Pack                 |   套件 TimeDete.Traceability.HashChain.0.1.0 遺漏讀我檔案。請移至 https://aka.ms/nuget/authoring-best-practices/readme 以了解套件讀我檔案很重要的原因。
+D | Pack                 |   已成功建立封裝 'C:\lunar-horse\plate-projects\time-dete\build\_artifacts\time-dete\nuget\TimeDete.Traceability.HashChain.0.1.0.nupkg'。
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | Loading build configuration
+I | Pack                 | > "C:\Program Files\dotnet\dotnet.exe" pack C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Traceability.Hashing\TimeDete.Traceability.Hashing.csproj --configuration Release --no-restore --output C:\lunar-horse\plate-projects\time-dete\build\_artifacts\time-dete\nuget /property:Version=0.1.0
+V | Pack                 | @ C:\lunar-horse\plate-projects\time-dete
+D | Pack                 |   General.NamespaceUsingScope -> C:\lunar-horse\plate-projects\plate-shared\dotnet\source-generators\General.NamespaceUsingScope.Set\General.NamespaceUsingScope\bin\Release\netstandard2.0\Plate.SCG.General.NamespaceUsingScope.dll
+D | Pack                 |   TimeDete.Traceability.Hashing -> C:\lunar-horse\plate-projects\time-dete\dotnet\src\TimeDete.Traceability.Hashing\bin\Release\netstandard2.1\TimeDete.Traceability.Hashing.dll
+D | Pack                 |   套件 TimeDete.Traceability.Hashing.0.1.0 遺漏讀我檔案。請移至 https://aka.ms/nuget/authoring-best-practices/readme 以了解套件讀我檔案很重要的原因。
+D | Pack                 |   已成功建立封裝 'C:\lunar-horse\plate-projects\time-dete\build\_artifacts\time-dete\nuget\TimeDete.Traceability.Hashing.0.1.0.nupkg'。
+V | Pack                 | Telemetry.OnTargetSucceeded (0)
+V | Pack                 | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+V |                      | UpdateNotification.OnBuildFinished (10)
+V |                      | SerializeBuildServerState.OnBuildFinished (0)
+V |                      | EventInvoker.OnBuildFinished (-3.4028235E+38)
