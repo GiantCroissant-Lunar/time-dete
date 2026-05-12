@@ -3,8 +3,6 @@ using System;
 
 namespace System.Runtime.CompilerServices
 {
-    public sealed class IsExternalInit { }
-
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct, AllowMultiple = false, Inherited = false)]
     public sealed class RequiredMemberAttribute : Attribute { }
 

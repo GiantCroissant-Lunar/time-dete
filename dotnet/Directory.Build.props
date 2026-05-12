@@ -2,9 +2,16 @@
   <PropertyGroup>
     <!-- Root of the plate-shared repo, relative to this Directory.Build.props location -->
     <TimeDetePlateSharedRoot>$(MSBuildThisFileDirectory)..\..\plate-shared\</TimeDetePlateSharedRoot>
+    <PlateSharedRoot Condition="'$(PlateSharedRoot)'==''">$(MSBuildThisFileDirectory)..\..\plate-shared\</PlateSharedRoot>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="$(PlateSharedRoot)dotnet\shared\IsExternalInit.cs"
+             Link="Polyfills\IsExternalInit.cs"
+             Visible="false" />
+    <Compile Include="$(MSBuildThisFileDirectory)shared\RequiredMembersPolyfills.cs"
+             Link="Polyfills\RequiredMembersPolyfills.cs"
+             Visible="false" />
     <PackageReference Include="Meziantou.Analyzer" Version="1.0.734"
                       PrivateAssets="all"
                       IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
