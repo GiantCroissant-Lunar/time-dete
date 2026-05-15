@@ -3,6 +3,10 @@
     <!-- Root of the plate-shared repo, relative to this Directory.Build.props location -->
     <TimeDetePlateSharedRoot>$(MSBuildThisFileDirectory)..\..\plate-shared\</TimeDetePlateSharedRoot>
     <PlateSharedRoot Condition="'$(PlateSharedRoot)'==''">$(MSBuildThisFileDirectory)..\..\plate-shared\</PlateSharedRoot>
+
+    <!-- Align NuGet PackageId with the Plate.* namespace prefix used in source. Test
+         projects opt out with <IsPackable>false</IsPackable> so this only affects packs. -->
+    <PackageId>Plate.$(MSBuildProjectName)</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
