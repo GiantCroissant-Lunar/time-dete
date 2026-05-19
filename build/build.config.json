@@ -11,7 +11,6 @@
         "TimeDete.Time.Primitives",
         "TimeDete.Time.Runtime",
         "TimeDete.Determinism.Abstractions",
-        "TimeDete.Determinism.Pcg",
         "TimeDete.Traceability.HashChain",
         "TimeDete.Traceability.Hashing"
       ]
