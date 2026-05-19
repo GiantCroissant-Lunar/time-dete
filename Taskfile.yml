@@ -18,10 +18,10 @@ tasks:
       - dotnet tool restore
 
   build:
-    desc: Build the .NET solution
+    desc: Build the .NET solution via unify-build
     deps: [restore]
     cmds:
-      - dotnet build {{.SLN_PATH}}
+      - '{{.UNIFY}} Compile'
 
   test:
     desc: Run unit tests
