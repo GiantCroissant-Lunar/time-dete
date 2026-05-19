@@ -1,8 +1,6 @@
 {
   "$schema": "./build.config.schema.json",
-  "version": "0.1.0",
-  "versionEnv": "Version",
-  "artifactsVersion": "time-dete",
+  "versionEnv": "GITVERSION_MAJORMINORPATCH",
 
   "projectGroups": {
     "packages": {

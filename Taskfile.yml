@@ -2,6 +2,9 @@ version: "3"
 
 vars:
   HUB_PACKAGE_DIR: node_modules/@giantcroissant-lunar/lunar-snake-hub
+  UNIFY: dotnet tool run unify-build --
+  SLN_PATH: dotnet/Plate.TimeDete.sln
+  GITVERSION_JSON: bash tools/gitversion.sh
 
 tasks:
   default:
@@ -9,22 +12,42 @@ tasks:
     cmds:
       - task --list
 
+  restore:
+    desc: Restore dotnet tools
+    cmds:
+      - dotnet tool restore
+
   build:
     desc: Build the .NET solution
+    deps: [restore]
     cmds:
-      - dotnet build dotnet/Plate.TimeDete.sln
+      - dotnet build {{.SLN_PATH}}
 
   test:
     desc: Run unit tests
+    deps: [restore]
     cmds:
-      - dotnet test dotnet/Plate.TimeDete.sln
+      - dotnet test {{.SLN_PATH}}
 
   pack:
-    desc: Pack NuGet packages via Nuke + UnifyBuild
-    env:
-      UseLocalUnifyBuild: "true"
+    desc: Create NuGet packages (version from GitVersion)
+    deps: [restore]
     cmds:
-      - pwsh -File build/nuke/build.ps1 --target PackProjects
+      - '{{.UNIFY}} PackProjects'
+    env:
+      GITVERSION_MAJORMINORPATCH:
+        sh: '{{.GITVERSION_JSON}} | python -c "import sys,json;print(json.load(sys.stdin)[''MajorMinorPatch''])"'
+
+  version:
+    desc: Show computed version
+    deps: [restore]
+    cmds:
+      - '{{.GITVERSION_JSON}} | python -c "import sys,json;d=json.load(sys.stdin);print(d[''FullSemVer''])"'
+
+  changelog:
+    desc: Generate changelog from conventional commits
+    cmds:
+      - git-cliff -o CHANGELOG.md
 
   # ========================================================================
   # Hub sync (lunar-snake-hub)

@@ -3,10 +3,14 @@
   "isRoot": true,
   "tools": {
     "unifybuild.tool": {
-      "version": "0.2.2",
+      "version": "3.0.0",
       "commands": [
         "unify-build"
       ]
+    },
+    "gitversion.tool": {
+      "version": "6.5.1",
+      "commands": ["dotnet-gitversion"]
     }
   }
 }
