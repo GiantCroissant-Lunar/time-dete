@@ -2,7 +2,7 @@ using System;
 using MessagePack;
 using MessagePack.Formatters;
 
-namespace Plate.TimeDete.Time.Primitives;
+namespace TimeDete.Time.Primitives;
 
 /// <summary>
 /// A MessagePack formatter for <see cref="CanonicalTick"/>.

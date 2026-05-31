@@ -1,7 +1,7 @@
 using System.Collections.Concurrent;
-using Plate.TimeDete.Determinism.Abstractions;
+using TimeDete.Determinism.Abstractions;
 
-namespace Plate.TimeDete.Determinism.Pcg;
+namespace TimeDete.Determinism.Pcg;
 
 public sealed class PcgRngStreamProvider : IRngStreamProvider
 {

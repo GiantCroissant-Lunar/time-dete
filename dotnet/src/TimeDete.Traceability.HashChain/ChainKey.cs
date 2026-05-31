@@ -1,3 +1,3 @@
-namespace Plate.TimeDete.Traceability.HashChain;
+namespace TimeDete.Traceability.HashChain;
 
 public readonly record struct ChainKey(string Value);

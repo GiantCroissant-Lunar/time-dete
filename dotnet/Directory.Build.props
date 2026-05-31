@@ -4,9 +4,11 @@
     <TimeDetePlateSharedRoot>$(MSBuildThisFileDirectory)..\..\plate-shared\</TimeDetePlateSharedRoot>
     <PlateSharedRoot Condition="'$(PlateSharedRoot)'==''">$(MSBuildThisFileDirectory)..\..\plate-shared\</PlateSharedRoot>
 
-    <!-- Align NuGet PackageId with the Plate.* namespace prefix used in source. Test
-         projects opt out with <IsPackable>false</IsPackable> so this only affects packs. -->
-    <PackageId>Plate.$(MSBuildProjectName)</PackageId>
+    <!-- PackageId mirrors the project (= namespace) name, e.g. TimeDete.Time.Primitives. The legacy
+         `Plate.` prefix was dropped (it collided with fantasim's Geosphere.Plate.* tectonic-plate naming);
+         old Plate.TimeDete.* packages stay published in the local feed for not-yet-migrated consumers.
+         Test projects opt out with <IsPackable>false</IsPackable> so this only affects packs. -->
+    <PackageId>$(MSBuildProjectName)</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

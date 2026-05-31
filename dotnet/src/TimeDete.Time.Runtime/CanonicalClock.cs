@@ -1,9 +1,9 @@
 using System;
 using System.Threading;
-using Plate.TimeDete.Time;
-using Plate.TimeDete.Time.Primitives;
+using TimeDete.Time;
+using TimeDete.Time.Primitives;
 
-namespace Plate.TimeDete.Time.Runtime;
+namespace TimeDete.Time.Runtime;
 
 /// <summary>
 /// Default implementation of <see cref="ICanonicalClock"/> that provides a

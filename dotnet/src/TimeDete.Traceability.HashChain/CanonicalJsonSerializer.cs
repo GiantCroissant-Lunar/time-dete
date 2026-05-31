@@ -2,7 +2,7 @@ using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Plate.TimeDete.Traceability.HashChain;
+namespace TimeDete.Traceability.HashChain;
 
 public static class CanonicalJsonSerializer
 {

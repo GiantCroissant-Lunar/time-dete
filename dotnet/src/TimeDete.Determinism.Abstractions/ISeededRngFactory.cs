@@ -1,4 +1,4 @@
-namespace Plate.TimeDete.Determinism.Abstractions;
+namespace TimeDete.Determinism.Abstractions;
 
 /// <summary>
 /// Factory for creating seeded RNG instances.

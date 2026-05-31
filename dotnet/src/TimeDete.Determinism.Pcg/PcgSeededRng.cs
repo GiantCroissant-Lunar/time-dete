@@ -1,7 +1,7 @@
 using Pcg;
-using Plate.TimeDete.Determinism.Abstractions;
+using TimeDete.Determinism.Abstractions;
 
-namespace Plate.TimeDete.Determinism.Pcg;
+namespace TimeDete.Determinism.Pcg;
 
 public sealed class PcgSeededRng : ISeededRng
 {

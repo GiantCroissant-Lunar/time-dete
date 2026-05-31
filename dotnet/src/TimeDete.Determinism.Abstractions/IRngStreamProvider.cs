@@ -1,4 +1,4 @@
-namespace Plate.TimeDete.Determinism.Abstractions;
+namespace TimeDete.Determinism.Abstractions;
 
 /// <summary>
 /// Provides named RNG streams for different game systems.

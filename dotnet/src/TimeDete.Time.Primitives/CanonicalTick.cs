@@ -1,6 +1,6 @@
 using System;
 
-namespace Plate.TimeDete.Time.Primitives;
+namespace TimeDete.Time.Primitives;
 
 /// <summary>
 /// Represents an absolute point in simulation time as an immutable value.

@@ -1,4 +1,4 @@
-namespace Plate.TimeDete.Traceability.Hashing;
+namespace TimeDete.Traceability.Hashing;
 
 /// <summary>
 /// Provides hexadecimal encoding and decoding utilities.

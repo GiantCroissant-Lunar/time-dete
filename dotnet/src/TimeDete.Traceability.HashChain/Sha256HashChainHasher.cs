@@ -1,7 +1,7 @@
 using System.Text;
-using Plate.TimeDete.Traceability.Hashing;
+using TimeDete.Traceability.Hashing;
 
-namespace Plate.TimeDete.Traceability.HashChain;
+namespace TimeDete.Traceability.HashChain;
 
 public sealed class Sha256HashChainHasher : IHashChainHasher
 {

@@ -1,7 +1,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Plate.TimeDete.Traceability.Hashing;
+namespace TimeDete.Traceability.Hashing;
 
 /// <summary>
 /// Provides SHA-256 hashing utilities with lowercase hexadecimal output.

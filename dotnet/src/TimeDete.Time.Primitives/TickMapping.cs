@@ -1,6 +1,6 @@
 using System;
 
-namespace Plate.TimeDete.Time.Primitives;
+namespace TimeDete.Time.Primitives;
 
 public readonly record struct TickMapping
 {

@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Plate.TimeDete.Traceability.HashChain;
+namespace TimeDete.Traceability.HashChain;
 
 public static class CanonicalEnvelopeHashComputer
 {

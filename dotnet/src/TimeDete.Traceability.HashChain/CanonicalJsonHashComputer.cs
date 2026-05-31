@@ -1,8 +1,8 @@
 using System.Text;
 using System.Text.Json;
-using Plate.TimeDete.Traceability.Hashing;
+using TimeDete.Traceability.Hashing;
 
-namespace Plate.TimeDete.Traceability.HashChain;
+namespace TimeDete.Traceability.HashChain;
 
 public static class CanonicalJsonHashComputer
 {

@@ -1,7 +1,7 @@
 using System.Buffers.Binary;
 using System.Runtime.InteropServices;
 
-namespace Plate.TimeDete.Determinism.Abstractions;
+namespace TimeDete.Determinism.Abstractions;
 
 /// <summary>
 /// Serializable RNG state for snapshots and replay.

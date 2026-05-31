@@ -1,8 +1,8 @@
 using System.Text.Json;
-using Plate.TimeDete.Traceability.HashChain;
-using Plate.TimeDete.Traceability.Hashing;
+using TimeDete.Traceability.HashChain;
+using TimeDete.Traceability.Hashing;
 
-namespace Plate.TimeDete.Traceability.HashChain.Tests;
+namespace TimeDete.Traceability.HashChain.Tests;
 
 public sealed class HashChainTests
 {

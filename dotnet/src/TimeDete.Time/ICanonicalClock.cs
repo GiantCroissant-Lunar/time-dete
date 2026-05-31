@@ -1,6 +1,6 @@
-using Plate.TimeDete.Time.Primitives;
+using TimeDete.Time.Primitives;
 
-namespace Plate.TimeDete.Time;
+namespace TimeDete.Time;
 
 /// <summary>
 /// Provides access to the canonical simulation tick and current epoch.

@@ -1,4 +1,4 @@
-namespace Plate.TimeDete.Time.Primitives;
+namespace TimeDete.Time.Primitives;
 
 public enum TickMappingMode
 {

@@ -1,7 +1,7 @@
 using System;
-using Plate.TimeDete.Time.Primitives;
+using TimeDete.Time.Primitives;
 
-namespace Plate.TimeDete.Time.Tests;
+namespace TimeDete.Time.Tests;
 
 public sealed class CanonicalTickTests
 {

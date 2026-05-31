@@ -1,4 +1,4 @@
-namespace Plate.TimeDete.Determinism.Abstractions;
+namespace TimeDete.Determinism.Abstractions;
 
 /// <summary>
 /// Deterministic random number generator interface.
