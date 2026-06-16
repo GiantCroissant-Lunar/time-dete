@@ -38,6 +38,7 @@ TestResults/
 # NUKE build artifacts
 build/_artifacts/
 build/nuke/.nuke/temp/
+.nuke/temp/
 
 # Temporary files
 tmpclaude-*
