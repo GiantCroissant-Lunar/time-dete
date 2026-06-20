@@ -68,3 +68,6 @@ Thumbs.db
 CLAUDE.md
 GEMINI.md
 AGENTS.md
+
+# CodeGraph local index
+.codegraph/
