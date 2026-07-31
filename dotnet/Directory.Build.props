@@ -4,11 +4,15 @@
     <TimeDetePlateSharedRoot>$(MSBuildThisFileDirectory)..\..\plate-shared\</TimeDetePlateSharedRoot>
     <PlateSharedRoot Condition="'$(PlateSharedRoot)'==''">$(MSBuildThisFileDirectory)..\..\plate-shared\</PlateSharedRoot>
 
-    <!-- PackageId mirrors the project (= namespace) name, e.g. TimeDete.Time.Primitives. The legacy
-         `Plate.` prefix was dropped (it collided with fantasim's Geosphere.Plate.* tectonic-plate naming);
-         old Plate.TimeDete.* packages stay published in the local feed for not-yet-migrated consumers.
+    <!-- PackageId is the org prefix + the project (= namespace) name, e.g.
+         GiantCroissant.TimeDete.Time.Primitives, matching every other repo in the workspace
+         (GiantCroissant.ServiceArchi.*, GiantCroissant.CrosscutFoundation.*, …).
+         The legacy `Plate.` prefix was dropped separately because it collided with fantasim's
+         Geosphere.Plate.* tectonic-plate naming; `GiantCroissant.` does not reintroduce that clash.
+         Old Plate.TimeDete.* and unprefixed TimeDete.* packages stay published in the local feed
+         for not-yet-migrated consumers.
          Test projects opt out with <IsPackable>false</IsPackable> so this only affects packs. -->
-    <PackageId>$(MSBuildProjectName)</PackageId>
+    <PackageId>GiantCroissant.$(MSBuildProjectName)</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
