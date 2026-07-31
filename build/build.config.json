@@ -1,5 +1,6 @@
 {
   "$schema": "./build.config.schema.json",
+  "solution": "dotnet/Plate.TimeDete.sln",
   "versionEnv": "GITVERSION_MAJORMINORPATCH",
 
   "projectGroups": {
@@ -19,5 +20,6 @@
   },
 
   "packIncludeSymbols": false,
-  "syncLocalNugetFeed": false
+  "syncLocalNugetFeed": true,
+  "localNugetFeedRoot": "../../packages/nuget"
 }
